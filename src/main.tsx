@@ -9,7 +9,7 @@ import ReactDOM from "react-dom/client";
 
 import { routeTree } from "./routeTree.gen";
 
-import "./global.css";
+import "./global.css?url";
 import { parse, stringify } from "jsurl2";
 import reportWebVitals from "./reportWebVitals.ts";
 import { useAuthStore } from "./store/index.ts";

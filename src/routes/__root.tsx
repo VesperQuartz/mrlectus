@@ -11,7 +11,7 @@ import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { AsyncProvider } from "@/providers/async";
 import { LoadingProvider } from "@/providers/loader";
 
-type RootContext = {
+export type RootContext = {
   auth: any;
   queryClient: QueryClient | undefined;
 };
