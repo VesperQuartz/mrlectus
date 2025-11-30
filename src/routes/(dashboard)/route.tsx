@@ -17,7 +17,7 @@ function DashboardLayout() {
       <footer className="text-center text-sm text-muted-foreground pb-8">
         <p>© 2024 {new Date().getFullYear()} Subtle Folio – Framer Template</p>
         <p className="text-xs opacity-60 mt-2">
-          by MrLectus {/* MorvaLabs // Framer */}
+          by Waheed {/* MorvaLabs // Framer */}
         </p>
       </footer>
     </div>

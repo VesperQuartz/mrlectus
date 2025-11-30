@@ -85,7 +85,7 @@ export function Hero() {
           <div className="absolute inset-0 bg-gradient-to-b from-muted to-transparent rounded-full opacity-50" />
           {/* biome-ignore lint/performance/noImgElement: Using standard HTML img tag */}
           <img
-            src="https://avatar.vercel.sh/mrlectus?size=200"
+            src="https://avatar.vercel.sh/waheed?size=200"
             alt="Profile"
             className="w-full h-full rounded-full object-cover border-4 border-background shadow-2xl"
           />
