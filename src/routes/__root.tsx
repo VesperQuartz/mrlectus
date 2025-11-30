@@ -16,6 +16,53 @@ export type RootContext = {
 };
 
 export const Route = createRootRouteWithContext<RootContext>()({
+  head: () => ({
+    meta: [
+      {
+        title: "Waheed - Full Stack Developer Portfolio",
+      },
+      {
+        name: "description",
+        content: "Portfolio of Waheed - Full Stack Developer specializing in blockchain, fintech, and modern web applications",
+      },
+      {
+        property: "og:title",
+        content: "Waheed - Full Stack Developer Portfolio",
+      },
+      {
+        property: "og:description",
+        content: "Portfolio of Waheed - Full Stack Developer specializing in blockchain, fintech, and modern web applications",
+      },
+      {
+        property: "og:image",
+        content: "https://mrlectus.online/og-image.png",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:creator",
+        content: "@mrlectus",
+      },
+      {
+        name: "twitter:title",
+        content: "Waheed - Full Stack Developer Portfolio",
+      },
+      {
+        name: "twitter:description",
+        content: "Portfolio of Waheed - Full Stack Developer specializing in blockchain, fintech, and modern web applications",
+      },
+      {
+        name: "twitter:image",
+        content: "https://mrlectus.online/og-image.png",
+      },
+    ],
+  }),
   component: () => (
     <>
       <AsyncProvider>
