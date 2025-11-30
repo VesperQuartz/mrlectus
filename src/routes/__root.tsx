@@ -19,23 +19,21 @@ export const Route = createRootRouteWithContext<RootContext>()({
   head: () => ({
     meta: [
       {
-        title:
-          "Waheed | Full Stack Developer Portfolio - Blockchain & Web3 Expert",
+        title: "Waheed | Full Stack Developer - Blockchain & Web3 Expert",
       },
       {
         name: "description",
         content:
-          "Explore the portfolio of Waheed, a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
+          "Waheed is a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
       },
       {
         property: "og:title",
-        content:
-          "Waheed | Full Stack Developer Portfolio - Blockchain & Web3 Expert",
+        content: "Waheed | Full Stack Developer - Blockchain & Web3 Expert",
       },
       {
         property: "og:description",
         content:
-          "Explore the portfolio of Waheed, a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
+          "Waheed is a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
       },
       {
         property: "og:image",
@@ -55,13 +53,12 @@ export const Route = createRootRouteWithContext<RootContext>()({
       },
       {
         name: "twitter:title",
-        content:
-          "Waheed | Full Stack Developer Portfolio - Blockchain & Web3 Expert",
+        content: "Waheed | Full Stack Developer - Blockchain & Web3 Expert",
       },
       {
         name: "twitter:description",
         content:
-          "Explore the portfolio of Waheed, a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
+          "Waheed is a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
       },
       {
         name: "twitter:image",
