@@ -6,10 +6,11 @@ import {
 } from "@tanstack/react-router";
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
+import { ThemeProvider } from "./components/theme-provider";
 
 import { routeTree } from "./routeTree.gen";
 
-import "./global.css?url";
+import "./global.css";
 import { parse, stringify } from "jsurl2";
 import reportWebVitals from "./reportWebVitals.ts";
 import { useAuthStore } from "./store/index.ts";
@@ -45,7 +46,9 @@ if (rootElement && !rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
     <StrictMode>
-      <InnerRouter />
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <InnerRouter />
+      </ThemeProvider>
     </StrictMode>,
   );
 }

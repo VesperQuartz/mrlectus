@@ -1,9 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { HomeView } from "@/components/Portfolio/HomeView";
 
 export const Route = createFileRoute("/(dashboard)/")({
-  component: App,
+  component: Portfolio,
 });
 
-function App() {
-  return <div className="text-center bg-red-400">Index</div>;
+function Portfolio() {
+  return <HomeView />;
 }

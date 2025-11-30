@@ -1,0 +1,15 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "/home/brown/Code/mrlectus.online/logs/.36b1a6de1e89d9c8733193b5dbf9967e3eea9630-audit.json",
+  "files": [
+    {
+      "date": 1764466521122,
+      "name": "/home/brown/Code/mrlectus.online/logs/mcp-puppeteer-2025-11-30.log",
+      "hash": "d3e7ecd50b9225dbd4e7c3df3c9fa58cab2ea94debbf5257ee68dc199ef8fd97"
+    }
+  ],
+  "hashType": "sha256"
+}
