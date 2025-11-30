@@ -19,19 +19,23 @@ export const Route = createRootRouteWithContext<RootContext>()({
   head: () => ({
     meta: [
       {
-        title: "Waheed | Full Stack Developer Portfolio - Blockchain & Web3 Expert",
+        title:
+          "Waheed | Full Stack Developer Portfolio - Blockchain & Web3 Expert",
       },
       {
         name: "description",
-        content: "Explore the portfolio of Waheed, a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
+        content:
+          "Explore the portfolio of Waheed, a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
       },
       {
         property: "og:title",
-        content: "Waheed | Full Stack Developer Portfolio - Blockchain & Web3 Expert",
+        content:
+          "Waheed | Full Stack Developer Portfolio - Blockchain & Web3 Expert",
       },
       {
         property: "og:description",
-        content: "Explore the portfolio of Waheed, a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
+        content:
+          "Explore the portfolio of Waheed, a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
       },
       {
         property: "og:image",
@@ -51,11 +55,13 @@ export const Route = createRootRouteWithContext<RootContext>()({
       },
       {
         name: "twitter:title",
-        content: "Waheed | Full Stack Developer Portfolio - Blockchain & Web3 Expert",
+        content:
+          "Waheed | Full Stack Developer Portfolio - Blockchain & Web3 Expert",
       },
       {
         name: "twitter:description",
-        content: "Explore the portfolio of Waheed, a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
+        content:
+          "Explore the portfolio of Waheed, a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
       },
       {
         name: "twitter:image",
@@ -69,23 +75,25 @@ export const Route = createRootRouteWithContext<RootContext>()({
         <LoadingProvider>
           <HeadContent />
           <Outlet />
-          <TanStackDevtools
-            config={{
-              position: "bottom-left",
-              openHotkey: ["Meta", "Shift", "O"],
-            }}
-            plugins={[
-              {
-                name: "Tanstack Router",
-                render: <TanStackRouterDevtoolsPanel />,
-              },
-              {
-                name: "React Query",
-                render: <ReactQueryDevtoolsPanel />,
-              },
-              formDevtoolsPlugin(),
-            ]}
-          />
+          {import.meta.env.DEV && (
+            <TanStackDevtools
+              config={{
+                position: "bottom-left",
+                openHotkey: ["Meta", "Shift", "O"],
+              }}
+              plugins={[
+                {
+                  name: "Tanstack Router",
+                  render: <TanStackRouterDevtoolsPanel />,
+                },
+                {
+                  name: "React Query",
+                  render: <ReactQueryDevtoolsPanel />,
+                },
+                formDevtoolsPlugin(),
+              ]}
+            />
+          )}
         </LoadingProvider>
       </AsyncProvider>
     </>
