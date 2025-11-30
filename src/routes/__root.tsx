@@ -19,23 +19,23 @@ export const Route = createRootRouteWithContext<RootContext>()({
   head: () => ({
     meta: [
       {
-        title: "Waheed - Full Stack Developer Portfolio",
+        title: "Waheed | Full Stack Developer Portfolio - Blockchain & Web3 Expert",
       },
       {
         name: "description",
-        content: "Portfolio of Waheed - Full Stack Developer specializing in blockchain, fintech, and modern web applications",
+        content: "Explore the portfolio of Waheed, a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
       },
       {
         property: "og:title",
-        content: "Waheed - Full Stack Developer Portfolio",
+        content: "Waheed | Full Stack Developer Portfolio - Blockchain & Web3 Expert",
       },
       {
         property: "og:description",
-        content: "Portfolio of Waheed - Full Stack Developer specializing in blockchain, fintech, and modern web applications",
+        content: "Explore the portfolio of Waheed, a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
       },
       {
         property: "og:image",
-        content: "https://mrlectus.online/og-image.png",
+        content: "https://mrlectus.online/logo512.png",
       },
       {
         property: "og:type",
@@ -51,15 +51,15 @@ export const Route = createRootRouteWithContext<RootContext>()({
       },
       {
         name: "twitter:title",
-        content: "Waheed - Full Stack Developer Portfolio",
+        content: "Waheed | Full Stack Developer Portfolio - Blockchain & Web3 Expert",
       },
       {
         name: "twitter:description",
-        content: "Portfolio of Waheed - Full Stack Developer specializing in blockchain, fintech, and modern web applications",
+        content: "Explore the portfolio of Waheed, a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
       },
       {
         name: "twitter:image",
-        content: "https://mrlectus.online/og-image.png",
+        content: "https://mrlectus.online/logo512.png",
       },
     ],
   }),
