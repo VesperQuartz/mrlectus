@@ -15,57 +15,19 @@ export type RootContext = {
   queryClient: QueryClient | undefined;
 };
 
+/**
+ * All SEO and social meta lives in index.html, deliberately.
+ *
+ * This is a client-rendered SPA — the bots that build link previews (LinkedIn,
+ * Slack, Discord, iMessage) fetch the raw HTML and do not execute JavaScript.
+ * They only ever see index.html, so that file is the single source of truth for
+ * <title>, description and the Open Graph / Twitter tags.
+ *
+ * Declaring the same tags here as well produced a duplicate copy of each tag in
+ * <head>, so this route intentionally contributes no meta.
+ */
+
 export const Route = createRootRouteWithContext<RootContext>()({
-  head: () => ({
-    meta: [
-      {
-        title: "Waheed | Full Stack Developer - Blockchain & Web3 Expert",
-      },
-      {
-        name: "description",
-        content:
-          "Waheed is a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
-      },
-      {
-        property: "og:title",
-        content: "Waheed | Full Stack Developer - Blockchain & Web3 Expert",
-      },
-      {
-        property: "og:description",
-        content:
-          "Waheed is a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
-      },
-      {
-        property: "og:image",
-        content: "https://mrlectus.online/logo512.png",
-      },
-      {
-        property: "og:type",
-        content: "website",
-      },
-      {
-        name: "twitter:card",
-        content: "summary_large_image",
-      },
-      {
-        name: "twitter:creator",
-        content: "@mrlectus",
-      },
-      {
-        name: "twitter:title",
-        content: "Waheed | Full Stack Developer - Blockchain & Web3 Expert",
-      },
-      {
-        name: "twitter:description",
-        content:
-          "Waheed is a Full Stack Developer specializing in high-performance blockchain solutions, fintech apps, and modern web development. Available for hire.",
-      },
-      {
-        name: "twitter:image",
-        content: "https://mrlectus.online/logo512.png",
-      },
-    ],
-  }),
   component: () => (
     <>
       <AsyncProvider>
